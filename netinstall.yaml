@@ -1,35 +1,116 @@
-# Example configuration with groups and packages, taken from Chakra Linux.
-#
-# SPDX-FileCopyrightText: no
-# SPDX-License-Identifier: CC0-1.0
-#
-# This example is rather limited. See `netinstall.conf` for full documentation
-# on the configuration format. The module configuration file `netinstall.conf`
-# **may** contain the package-list, but that is only useful for static
-# package-lists. If you are updating the package lists or changing the package
-# offerings, an online `netinstall.yaml` is the way to go; or you can put the
-# `netinstall.yaml` on the installation media and modify that, while keeping
-# your Calamares configuration constant.
-#
-# Which approach works depends on what you want to offer and how your
-# ISO-image toolchain works.
-- name: "Wireless"
-  description: "Tools for wireless connections"
-  critical: false
-  packages:
-    - crda
-    - ndiswrapper
-    - usb-modeswitch
-    - wireless-regdb
-    - wireless_tools
-    - wpa_supplicant
-- name: "CCR"
-  description: "Tools for the Chakra Community Repository"
-  packages:
-    - ccr
-    - base-devel
 - name: "Graphics"
   description: "Applications to work with graphics"
   packages:
     - blender
+    - kdenlive
+    - krita
+    - gimp
+    - inkscape
 
+- name: "Development"
+  description: "Development software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - atom
+    - brackets-bin
+    - code
+    - emacs
+    - geany
+    - geany-plugins
+    - intellij-idea-community-edition
+    - kdevelop
+    - leafpad
+    - meld
+    - notepadqq
+    - openscad
+    - pycharm-community-edition
+    - sublime-text-4
+    - visual-studio-code-bin
+
+- name: "Accessories"
+  description: "Accessories"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - cheese
+    - font-manager-git
+    - galculator
+    - gpick
+    - liferea
+    - mediainfo-gui
+    - mcomix
+    - nitrogen
+    - nomacs
+    - pdfarranger
+    - plank
+    - arcolinux-plank-themes-git
+    - screenkey-git
+    - vim-plugins
+    - variety
+
+- name: "Filemanagers"
+  description: "Filemanagers"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - dolphin
+    - mc
+    - nautilus
+    - nemo
+    - nemo-fileroller
+    - pcmanfm
+    - ranger
+    - thunar
+    - thunar-archive-plugin
+    - thunar-volman
+
+- name: "Fonts"
+  description: "Fonts"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - adobe-source-sans-pro-fonts
+    - awesome-terminal-fonts
+    - ttf-anonymous-pro
+    - ttf-bitstream-vera
+    - ttf-caladea
+    - ttf-carlito
+    - ttf-cascadia-code
+    - ttf-cormorant
+    - ttf-croscore
+    - ttf-eurof
+    - ttf-fantasque-sans-mono
+    - ttf-fira-code
+    - ttf-fira-mono
+    - ttf-fira-sans
+    - ttf-font-awesome
+    - ttf-hack    
+    - ttf-hactor
+    - ttf-hellvetica
+    - ttf-ibm-plex
+    - ttf-inconsolata
+    - ttf-jetbrains-mono
+    - ttf-joypixels
+    - ttf-lato
+    - ttf-liberation
+    - ttf-linux-libertine
+    - ttf-linux-libertine-g
+    - ttf-meslo-nerd-font-powerlevel10k
+    - ttf-monofur
+    - ttf-ms-fonts
+    - ttf-nerd-fonts-symbols
+    - ttf-nerd-fonts-symbols-mono
+    - ttf-opensans
+    - ttf-proggy-clean
+    - ttf-roboto
+    - ttf-roboto-mono
+    - ttf-ubuntu-font-family
