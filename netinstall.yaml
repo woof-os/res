@@ -1,5 +1,8 @@
 - name: "Graphics"
   description: "Applications to work with graphics"
+  critical: false
+  hidden: false
+  selected: false
   packages:
     - blender
     - kdenlive
@@ -12,7 +15,6 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
   packages:
     - atom
     - brackets-bin
@@ -35,7 +37,6 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
   packages:
     - cheese
     - font-manager-git
@@ -58,7 +59,6 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
   packages:
     - dolphin
     - mc
@@ -76,7 +76,6 @@
   critical: false
   hidden: false
   selected: false
-  expanded: true
   packages:
     - adobe-source-sans-pro-fonts
     - awesome-terminal-fonts
