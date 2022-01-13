@@ -55,7 +55,7 @@
     - variety
 
 - name: "Filemanagers"
-  description: "Filemanagers"
+  description: "File Managers"
   critical: false
   hidden: false
   selected: false
@@ -70,6 +70,24 @@
     - thunar
     - thunar-archive-plugin
     - thunar-volman
+
+- name: "Music"
+  description: "Music Software"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - kid3
+    - spotify
+    - cmus
+    - mpv
+    - vlc
+    - rhythmbox
+    - audacious
+    - gnome-music
+    - deepin-music
+    - mpd
+    - ncmpcpp
 
 - name: "Fonts"
   description: "Fonts"
